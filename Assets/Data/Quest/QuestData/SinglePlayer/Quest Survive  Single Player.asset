@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d5e828dac79c5478b86d0f56ab71fa, type: 3}
+  m_Name: Quest Survive  Single Player
+  m_EditorClassIdentifier: 
+  <MapConfiguration>k__BackingField: {fileID: 1610783091903072608, guid: 1514e02dfe201054caf9deb61ae5864d, type: 3}
+  <NavigationData>k__BackingField: {fileID: 4900000, guid: e7c446ac164e71c43921e2b3a85fd46d, type: 3}
+  <QuestInfo>k__BackingField:
+    <Name>k__BackingField: Reconnaissance of the N-352 plateau
+    <NameLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 34509493024395265
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <ObjectiveName>k__BackingField: Wait for evac team.
+    <ObjectiveNameLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 34509493024395266
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <Title>k__BackingField: 'Nebular Functional Team Manual
+
+      Star Corps Alliance
+      of Mercenaries'
+    <TitleLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 34509493024395267
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <Description>k__BackingField: In accordance with Adria Corp. regulation No. GR-8,
+      preliminary landing areas for shuttles with terraforming groups have been designated.
+      Engineers and technicians will implement a plan to adapt the site to the future
+      colonization of the Arlant Mountains. However, for this to happen, it is necessary
+      to conduct reconnaissance and secure the landing zones of the shuttles. The
+      order comes into force on the day of signing.
+    <DescriptionLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 34509493024395268
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <Orders>k__BackingField:
+    - <Title>k__BackingField: Scout out plateau N-352.
+      <OrderTitleLocale>k__BackingField:
+        m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 34509493024395269
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      <Descriptions>k__BackingField:
+      - '- Recognize any jeopardys that may adversely affect landing.'
+      - '- Select the optimal place to carry out the landing.'
+      <OrderDescriptionsLocale>k__BackingField:
+      - m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 34509493024395272
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      - m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 34509493024395273
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - <Title>k__BackingField: Secure the N-352 plateau area.
+      <OrderTitleLocale>k__BackingField:
+        m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 34509493024395270
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      <Descriptions>k__BackingField:
+      - '- Eliminate any hostile lifeforms within the zone.'
+      - '- Possible neutral life forms to be isolated.'
+      <OrderDescriptionsLocale>k__BackingField:
+      - m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 34509493024395274
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      - m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 34509493024395275
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - <Title>k__BackingField: In the event of impossibility to carry out point 1
+        or 2, await evacuation.
+      <OrderTitleLocale>k__BackingField:
+        m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 34509493024395271
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      <Descriptions>k__BackingField: []
+      <OrderDescriptionsLocale>k__BackingField: []
+    <Attention>k__BackingField: 'Attention: Expect high activity in the region and
+      increased attacks from hostile life forms.'
+    <AttentionLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 34509493024395276
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <Signature>k__BackingField: 'Military Affair Coordinator
+
+      Adria Corporation
+
+      Lt.
+      Marie Josephine Farmiga'
+    <SignatureLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 34509493024395277
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <MapSprite>k__BackingField: {fileID: 21300000, guid: e4e4f7e355162904090a8cee8b2b6dac, type: 3}
+    <BiomeSprite>k__BackingField: {fileID: 21300000, guid: d1b2254526408d74497a824d13d66784, type: 3}
+  <SceneName>k__BackingField: LevelSurvive
+  successTaskAmountContainer:
+  - <TaskData>k__BackingField: {fileID: 11400000, guid: d666f2fb303641a4baac9b3001f07ec8, type: 2}
+    <RequiredAmount>k__BackingField: 360
+    <UIPrefab>k__BackingField: {fileID: 1298927442754111552, guid: 4dc040aaaa76f7543b3c3618aba953ed, type: 3}
+  failTaskAmountContainer:
+  - <TaskData>k__BackingField: {fileID: 11400000, guid: 1ba3bd63f995ea0408784c552d2e6fd5, type: 2}
+    <RequiredAmount>k__BackingField: 1
+    <UIPrefab>k__BackingField: {fileID: 1298927442754111552, guid: 4dc040aaaa76f7543b3c3618aba953ed, type: 3}
+  references:
+    version: 2
+    RefIds: []

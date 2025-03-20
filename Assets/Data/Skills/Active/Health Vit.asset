@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539ba69b1216ec646bb8b73730ca1c6f, type: 3}
+  m_Name: Health Vit
+  m_EditorClassIdentifier: 
+  <MassCost>k__BackingField: 1000
+  <RequiredZealyLevel>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 1da03042d55e95a47a2f8dc7b35f5c5e, type: 3}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  localizedStringLong:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035557
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringShort:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035526
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035588
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Cooldown>k__BackingField: 40
+  <BiomassCost>k__BackingField: 100
+  condition:
+    rid: -2
+  sounds:
+    sounds: []
+  actions:
+  - <Time>k__BackingField: 0
+    <Action>k__BackingField:
+      rid: 1212658296493178882
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1212658296493178882
+      type: {class: ChangeCharacterDynamicStatSlillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        statType: {fileID: 11400000, guid: df963ddf6eba0e74997252c3c72595af, type: 2}
+        type: 1
+        value: 35

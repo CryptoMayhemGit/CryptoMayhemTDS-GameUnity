@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8386493235356326992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6357249671196050825}
+  - component: {fileID: 3631452866340719332}
+  m_Layer: 0
+  m_Name: Dead Pro Cannonier
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6357249671196050825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386493235356326992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3452891879772324046}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3631452866340719332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386493235356326992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edc58464c30caf42b9a8d3d9e6f1b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Transform>k__BackingField: {fileID: 6357249671196050825}
+  Pool: {fileID: 11400000, guid: 580cf50ce1f08ee41bf6e5456136cfb5, type: 2}
+  spawnSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  gameManager: {fileID: 11400000, guid: 895c72a5486d6574ca8a5ef6b55a4eb8, type: 2}
+  animator: {fileID: 8722080540801686196}
+  stayTime: 8
+  fadingTime: 8
+  fadingSpeed: 0.5
+--- !u!1001 &2909777961510266661
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6357249671196050825}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7571917724844125873, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd628e80dfb73d947ad03cf903c2e3c9, type: 2}
+    - target: {fileID: -355497446632628860, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd628e80dfb73d947ad03cf903c2e3c9, type: 2}
+    - target: {fileID: 919132149155446097, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_Name
+      value: Canonnier
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462303495918254742, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd628e80dfb73d947ad03cf903c2e3c9, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b372725e78f5c8143987a6626584e003, type: 2}
+    - target: {fileID: 6548407301966548185, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd628e80dfb73d947ad03cf903c2e3c9, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+--- !u!4 &3452891879772324046 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+  m_PrefabInstance: {fileID: 2909777961510266661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8722080540801686196 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 2009867580d0bb843b544c7b4d00e8cd, type: 3}
+  m_PrefabInstance: {fileID: 2909777961510266661}
+  m_PrefabAsset: {fileID: 0}

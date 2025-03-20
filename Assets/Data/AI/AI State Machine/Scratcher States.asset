@@ -1,0 +1,249 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6806904569824619316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57deae60e6508034599662ce929f9c31, type: 3}
+  m_Name: AITransition
+  m_EditorClassIdentifier: 
+  outputs:
+  - {fileID: -4019846077158583723}
+  nodePosition: {x: 518, y: 0, z: 0}
+  conditions:
+  - rid: 2057777875829129222
+  references:
+    version: 2
+    RefIds:
+    - rid: 2057777875829129222
+      type: {class: WithClosestTargetInRangeAICondition, ns: Assets.Scripts.AI.Condition, asm: Assembly-CSharp}
+      data:
+        lineOfSight: 1
+        ignoreLayerMask:
+          serializedVersion: 2
+          m_Bits: 1099426807
+        minDistance: 0
+        maxDistance: 3
+        inRangeReturn: 1
+--- !u!114 &-6329149005885761191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ea24abe44d0964490c6030c31de56b, type: 3}
+  m_Name: AIExit
+  m_EditorClassIdentifier: 
+  outputs: []
+  nodePosition: {x: 1532, y: 0, z: 0}
+--- !u!114 &-4019846077158583723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed3461bfe144aa44b0f9977a1f75f81, type: 3}
+  m_Name: AIState
+  m_EditorClassIdentifier: 
+  outputs:
+  - {fileID: 8625079789251358455}
+  nodePosition: {x: 861, y: 0, z: 0}
+  elapsedTime: 0
+  actions:
+  - rid: 2057777875829129223
+  - rid: 542515074806579219
+  references:
+    version: 2
+    RefIds:
+    - rid: 542515074806579219
+      type: {class: RotateTowardsClosestTargetAIAction, ns: Assets.Scripts.AI.Action, asm: Assembly-CSharp}
+      data:
+        rotationSpeed: 3
+    - rid: 2057777875829129223
+      type: {class: TryUseSkillAIAction, ns: Assets.Scripts.AI.Action, asm: Assembly-CSharp}
+      data:
+        skillToUse: {fileID: 11400000, guid: aa9b77cf8ed13c345885367ee1a096a9, type: 2}
+--- !u!114 &-584954464282701588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ea24abe44d0964490c6030c31de56b, type: 3}
+  m_Name: AIExit
+  m_EditorClassIdentifier: 
+  outputs: []
+  nodePosition: {x: 1532, y: 329, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec779f1e04352964eaa759f8a2a55686, type: 3}
+  m_Name: Scratcher States
+  m_EditorClassIdentifier: 
+  defaultState: {fileID: 7371046958010360145}
+  viewPosition: {x: 3, y: 284, z: 0}
+  viewScale: {x: 1, y: 1, z: 1}
+--- !u!114 &119472400342707657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1581003d16a6b324b88240921ded1793, type: 3}
+  m_Name: AIStart
+  m_EditorClassIdentifier: 
+  outputs:
+  - {fileID: 7371046958010360145}
+  nodePosition: {x: 0, y: 0, z: 0}
+--- !u!114 &3374212484691158777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed3461bfe144aa44b0f9977a1f75f81, type: 3}
+  m_Name: AIState
+  m_EditorClassIdentifier: 
+  outputs:
+  - {fileID: 6163093510775487867}
+  nodePosition: {x: 861, y: 329, z: 0}
+  elapsedTime: 0
+  actions:
+  - rid: 2057777875829129225
+  references:
+    version: 2
+    RefIds:
+    - rid: 2057777875829129225
+      type: {class: WanderAIAction, ns: Assets.Scripts.AI.Action, asm: Assembly-CSharp}
+      data:
+        stopTimeInWanderPoint: 10
+        maxDistanceToNextWanderPoint: 10
+--- !u!114 &4910431998648353929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57deae60e6508034599662ce929f9c31, type: 3}
+  m_Name: AITransition
+  m_EditorClassIdentifier: 
+  outputs:
+  - {fileID: 3374212484691158777}
+  nodePosition: {x: 518, y: 329, z: 0}
+  conditions:
+  - rid: 2057777875829129224
+  references:
+    version: 2
+    RefIds:
+    - rid: 2057777875829129224
+      type: {class: WithClosestTargetInRangeAICondition, ns: Assets.Scripts.AI.Condition, asm: Assembly-CSharp}
+      data:
+        lineOfSight: 0
+        ignoreLayerMask:
+          serializedVersion: 2
+          m_Bits: 1099426807
+        minDistance: 0
+        maxDistance: 99
+        inRangeReturn: 0
+--- !u!114 &6163093510775487867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57deae60e6508034599662ce929f9c31, type: 3}
+  m_Name: AITransition
+  m_EditorClassIdentifier: 
+  outputs:
+  - {fileID: -584954464282701588}
+  nodePosition: {x: 1184, y: 329, z: 0}
+  conditions:
+  - rid: 2057777875829129226
+  references:
+    version: 2
+    RefIds:
+    - rid: 2057777875829129226
+      type: {class: WithClosestTargetInRangeAICondition, ns: Assets.Scripts.AI.Condition, asm: Assembly-CSharp}
+      data:
+        lineOfSight: 0
+        ignoreLayerMask:
+          serializedVersion: 2
+          m_Bits: 1099426807
+        minDistance: 0
+        maxDistance: 20
+        inRangeReturn: 1
+--- !u!114 &7371046958010360145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed3461bfe144aa44b0f9977a1f75f81, type: 3}
+  m_Name: AIState
+  m_EditorClassIdentifier: 
+  outputs:
+  - {fileID: -6806904569824619316}
+  - {fileID: 4910431998648353929}
+  nodePosition: {x: 171, y: 0, z: 0}
+  elapsedTime: 0
+  actions:
+  - rid: 2057777875829129221
+  references:
+    version: 2
+    RefIds:
+    - rid: 2057777875829129221
+      type: {class: SeekPlayerAIAction, ns: Assets.Scripts.AI.Action, asm: Assembly-CSharp}
+--- !u!114 &8625079789251358455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57deae60e6508034599662ce929f9c31, type: 3}
+  m_Name: AITransition
+  m_EditorClassIdentifier: 
+  outputs:
+  - {fileID: -6329149005885761191}
+  nodePosition: {x: 1184, y: 0, z: 0}
+  conditions: []
+  references:
+    version: 2
+    RefIds: []

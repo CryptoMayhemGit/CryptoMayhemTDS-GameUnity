@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539ba69b1216ec646bb8b73730ca1c6f, type: 3}
+  m_Name: Orbiting
+  m_EditorClassIdentifier: 
+  <MassCost>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 1a1bbcf3707dc6f4fb402968eea43c63, type: 3}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  localizedStringLong:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035553
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringShort:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035522
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035584
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Cooldown>k__BackingField: 1
+  <BiomassCost>k__BackingField: 1
+  condition:
+    rid: -2
+  sounds:
+    sounds: []
+  actions:
+  - <Time>k__BackingField: 0
+    <Action>k__BackingField:
+      rid: 1212658635275763715
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1212658635275763715
+      type: {class: AddEffectSkillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        effect: {fileID: 11400000, guid: 32d10b6fc74ed824c81a672caaef7033, type: 2}

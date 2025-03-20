@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16812db243ae5845aff1cfe982e9728, type: 3}
+  m_Name: Canister
+  m_EditorClassIdentifier: 
+  <MassCost>k__BackingField: 1000
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 44f83831de1cb09498e6f38675aa0983, type: 3}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  localizedStringLong:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909544841247
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringShort:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909544841239
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909544841255
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <MaxUses>k__BackingField: 1
+  <Cooldown>k__BackingField: 10
+  <Condition>k__BackingField:
+    rid: 3707987914005413894
+  <Action>k__BackingField:
+    rid: 5034892835451305995
+  <UseSound>k__BackingField:
+    Guid:
+      Data1: 1981380748
+      Data2: 1294356325
+      Data3: 671626426
+      Data4: -929414703
+    Path: event:/SFX/biomass/biomass_canister_use
+  references:
+    version: 2
+    RefIds:
+    - rid: 3707987914005413894
+      type: {class: DynamicStatSkillCondition, ns: Assets.Scripts.Skills.Condition, asm: Assembly-CSharp}
+      data:
+        statType: {fileID: 11400000, guid: 9a35e6ef96c08244db5c40e46e280793, type: 2}
+        type: 0
+        inverse: 1
+    - rid: 5034892835451305995
+      type: {class: ChangeCharacterDynamicStatSlillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        statType: {fileID: 11400000, guid: 9a35e6ef96c08244db5c40e46e280793, type: 2}
+        type: 0
+        value: 1000

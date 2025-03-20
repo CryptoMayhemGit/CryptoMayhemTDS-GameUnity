@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Burrower Enemy
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(1038.50378,-145.097839)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-1.52587891E-05,113.3333)"},"ID":1,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"Assets.Scripts.Behavior.Tasks.TryUseSkill","NodeData":{"Offset":"(0,110)"},"ID":2,"Name":"Try
+        Use Skill","Instant":true,"SharedCharacterContainercharacter":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},"SharedSkillskill":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedSkill","Name":"Burrow
+        Skill","IsShared":true,"SkillmValue":0},"SharedBoolcanPassNullTarget":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(110,110)"},"ID":3,"Name":"Sequence","Instant":true,"AbortTypeabortType":"Both","Children":[{"Type":"Assets.Scripts.Behavior.Tasks.BurrowChecker","NodeData":{"Offset":"(0,110)"},"ID":4,"Name":"Burrow
+        Checker","Instant":true,"SharedCharacterContainercharacter":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},"BooleanburrowStatus":false},{"Type":"Assets.Scripts.Behavior.Tasks.WithinDistanceToClosestTarget","NodeData":{"Offset":"(180,110)"},"ID":5,"Name":"Within
+        Distance To Closest Target","Instant":true,"SharedCharacterContainercharacter":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},"SharedFloatdistance":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attak
+        Range","IsShared":true,"SinglemValue":2},"SharedBoollineOfSight":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"LayerMaskignoreLayerMask":-2121800841},{"Type":"Assets.Scripts.Behavior.Tasks.TryUseSkill","NodeData":{"Offset":"(350,110)"},"ID":6,"Name":"Try
+        Use Skill","Instant":true,"SharedCharacterContainercharacter":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},"SharedSkillskill":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedSkill","Name":"Attack
+        Skill","IsShared":true,"SkillmValue":1},"SharedBoolcanPassNullTarget":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(620,110)"},"ID":7,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"Assets.Scripts.Behavior.Tasks.BurrowChecker","NodeData":{"Offset":"(0,110)"},"ID":8,"Name":"Burrow
+        Checker","Instant":true,"SharedCharacterContainercharacter":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},"BooleanburrowStatus":true},{"Type":"Assets.Scripts.Behavior.Tasks.EnemyAttackerMovement","NodeData":{"Offset":"(160,110)"},"ID":9,"Name":"Enemy
+        Attacker Movement","Instant":true,"SharedFloatstopSeekOnRange":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attak
+        Range","IsShared":true,"SinglemValue":2},"SharedCharacterContainercharacter":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},"SharedFloatrotationSpeed":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedFloatrandomPointRange":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":20},"SharedFloatwanderStopTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3}}]}]},"Variables":[{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attak
+        Range","IsShared":true,"SinglemValue":2},{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedSkill","Name":"Attack
+        Skill","IsShared":true,"SkillmValue":2},{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedSkill","Name":"Burrow
+        Skill","IsShared":true,"SkillmValue":3}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 11400000, guid: aee8443b49753b049be39f88580f673b, type: 2}
+        - {fileID: 11400000, guid: 6657dc3c0234f184cb7de7fd0acbd7e6, type: 2}
+        - {fileID: 11400000, guid: 6657dc3c0234f184cb7de7fd0acbd7e6, type: 2}
+        - {fileID: 11400000, guid: aee8443b49753b049be39f88580f673b, type: 2}
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.1

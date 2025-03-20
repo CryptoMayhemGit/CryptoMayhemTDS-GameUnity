@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16812db243ae5845aff1cfe982e9728, type: 3}
+  m_Name: Spare Cells
+  m_EditorClassIdentifier: 
+  <MassCost>k__BackingField: 150
+  <Sprite>k__BackingField: {fileID: 21300000, guid: b160797c7de9ae847a9072c432ca2cd3, type: 3}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  localizedStringLong:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909544841254
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringShort:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909544841246
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909544841262
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <MaxUses>k__BackingField: 2
+  <Cooldown>k__BackingField: 1
+  <Condition>k__BackingField:
+    rid: -2
+  <Action>k__BackingField:
+    rid: 1212658409644490776
+  <UseSound>k__BackingField:
+    Guid:
+      Data1: 2002558028
+      Data2: 1315071756
+      Data3: 1432483475
+      Data4: -2074295876
+    Path: event:/SFX/items/item_cell_use
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1212658409644490776
+      type: {class: ChangeCharacterDynamicStatSlillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        statType: {fileID: 11400000, guid: 63b310c2e2320a84d8e313cdabf4db5a, type: 2}
+        type: 1
+        value: 80

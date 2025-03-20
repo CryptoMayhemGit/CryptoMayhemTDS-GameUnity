@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 127d1c60694ff6645a52a49fc36936b1, type: 3}
+  m_Name: Arch cannon WAT 2137-10A50Hz Hook
+  m_EditorClassIdentifier: 
+  <MassCost>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 0}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  localizedStringLong:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35854680728342535
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringShort:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35854680728342558
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909544841223
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  weaponVisual: {fileID: 4033785903889663932, guid: 62d2a987159806d43afcd7633c248372, type: 3}
+  ammo:
+    rid: 5034893041197383702
+  attackCooldown: 1.5
+  shotSound:
+    Guid:
+      Data1: 2055919737
+      Data2: 1132548829
+      Data3: -140938364
+      Data4: 896944956
+    Path: event:/SFX/weapons/wpn_projectile_gun/wpn_projectile_gun_shot
+  projectileCount: 1
+  minMaxAngle: {x: 0, y: 0}
+  pool: {fileID: 11400000, guid: 16c093c035ffba644b0fa17d6ea55e26, type: 2}
+  muzzleEffect: {fileID: 0}
+  attackType:
+    rid: 5999282119665778695
+  attackPivotXAxisOffset: {x: -0.1, y: 0, z: 1}
+  projectileCore:
+    <MoveType>k__BackingField:
+      rid: 5034893041197383695
+    <ProjectileLifeTime>k__BackingField: 2
+    <Speed>k__BackingField: 100
+    <DestroyOnHit>k__BackingField: 0
+    <EffectsPool>k__BackingField: {fileID: 0}
+    hitActions:
+    - rid: 5034893041197383729
+    - rid: 5034893041197383697
+    destroyActions: []
+  onCameraShake: {fileID: 11400000, guid: aeef26caaddefdb49b33e26c253f90bb, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5034893041197383695
+      type: {class: CurveProjectileMoveType, ns: Assets.Scripts.Weapons.Projectiles.MoveTypes, asm: Assembly-CSharp}
+      data:
+        xMovement:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 136
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.25583184
+            value: 9.905657
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 136
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.71499693
+            value: -10.02359
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 136
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 136
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        zMovement:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 5034893041197383697
+      type: {class: DealDamageWeaponHitAction, ns: Assets.Scripts.Weapons.HitActions, asm: Assembly-CSharp}
+      data:
+        damageTypes:
+          list:
+          - <Key>k__BackingField: {fileID: 11400000, guid: 18c9af424d83e8f44941c94c5a167106, type: 2}
+            <Value>k__BackingField:
+              damage: 60
+              criticalMultiplier: 1.6
+              criticalHitChance: 0.05
+        hitBy: 0
+    - rid: 5034893041197383702
+      type: {class: BiomassAmmo, ns: Assets.Scripts.Weapons.Ammo, asm: Assembly-CSharp}
+      data:
+        biomassPerShot: 30
+        biomassStat: {fileID: 11400000, guid: 9a35e6ef96c08244db5c40e46e280793, type: 2}
+        reloadSound:
+          Guid:
+            Data1: 0
+            Data2: 0
+            Data3: 0
+            Data4: 0
+          Path: 
+    - rid: 5034893041197383729
+      type: {class: AddEffectWeaponHitAction, ns: Assets.Scripts.Weapons.HitActions, asm: Assembly-CSharp}
+      data:
+        effect: {fileID: 11400000, guid: eb794de9f02ae164a973c7ba048f7b71, type: 2}
+    - rid: 5999282119665778695
+      type: {class: AttackTypeCharge, ns: Assets.Scripts.Weapons.AttackTypes, asm: Assembly-CSharp}
+      data:
+        chargeTime: 0.5

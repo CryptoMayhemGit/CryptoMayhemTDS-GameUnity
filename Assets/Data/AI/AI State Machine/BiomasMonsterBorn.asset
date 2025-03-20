@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6896285929041573223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1581003d16a6b324b88240921ded1793, type: 3}
+  m_Name: AIStart
+  m_EditorClassIdentifier: 
+  outputs:
+  - {fileID: 718927297909907105}
+  nodePosition: {x: 0, y: 0, z: 0}
+--- !u!114 &-4887547407196682129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed3461bfe144aa44b0f9977a1f75f81, type: 3}
+  m_Name: AIState
+  m_EditorClassIdentifier: 
+  outputs: []
+  nodePosition: {x: 807, y: 26, z: 0}
+  elapsedTime: 0
+  actions:
+  - rid: 8372861536037502997
+  references:
+    version: 2
+    RefIds:
+    - rid: 8372861536037502997
+      type: {class: MonsterBornAction, ns: Assets.Scripts.AI.Action, asm: Assembly-CSharp}
+      data:
+        stateMachine: {fileID: 11400000, guid: ae55d4359ce279f45b96989dfb2057ce, type: 2}
+        statModifier:
+          type: 0
+          stat: {fileID: 11400000, guid: df963ddf6eba0e74997252c3c72595af, type: 2}
+          value: 119
+--- !u!114 &-4330608551010449704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57deae60e6508034599662ce929f9c31, type: 3}
+  m_Name: AITransition
+  m_EditorClassIdentifier: 
+  outputs:
+  - {fileID: -4887547407196682129}
+  nodePosition: {x: 503, y: 19, z: 0}
+  conditions:
+  - rid: 8372861536037502990
+  references:
+    version: 2
+    RefIds:
+    - rid: 8372861536037502990
+      type: {class: TimeCondition, ns: Assets.Scripts.AI.Condition, asm: Assembly-CSharp}
+      data:
+        time: 5
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec779f1e04352964eaa759f8a2a55686, type: 3}
+  m_Name: BiomasMonsterBorn
+  m_EditorClassIdentifier: 
+  defaultState: {fileID: 718927297909907105}
+  viewPosition: {x: 152, y: 271, z: 0}
+  viewScale: {x: 1, y: 1, z: 1}
+--- !u!114 &718927297909907105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed3461bfe144aa44b0f9977a1f75f81, type: 3}
+  m_Name: AIState
+  m_EditorClassIdentifier: 
+  outputs:
+  - {fileID: -4330608551010449704}
+  nodePosition: {x: 231, y: 19, z: 0}
+  elapsedTime: 0
+  actions:
+  - rid: 8372861591598399491
+  references:
+    version: 2
+    RefIds:
+    - rid: 8372861591598399491
+      type: {class: GrowAction, ns: Assets.Scripts.AI.Action, asm: Assembly-CSharp}
+      data:
+        time: 5
+        startScale: 0.1
+        endScale: 1

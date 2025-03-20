@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Data/Effects/Enemy Charge Damage.asset.meta
+guid: 5983f1a83af9a584cbbd88830856a14f
+========
+guid: 008077053ff1ace48b4639630e0d71b2
+>>>>>>>> Develop:Assets/Data/Inventory/Weapons/Weapon 1.asset.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

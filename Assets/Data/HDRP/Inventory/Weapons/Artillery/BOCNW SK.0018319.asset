@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1bf5290bdf6ee4ebed6e5603adc5f8, type: 3}
+  m_Name: BOCNW SK.0018319
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <Sprite>k__BackingField: {fileID: 0}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  <Description>k__BackingField: 
+  weaponVisual: {fileID: 4033785903889663932, guid: 62d2a987159806d43afcd7633c248372, type: 3}
+  ammo:
+    rid: 6497457432574820357
+  attackCooldown: 1.2
+  shotSound:
+    Guid:
+      Data1: 165350076
+      Data2: 1257669334
+      Data3: 1249854090
+      Data4: -24756435
+    Path: event:/SFX/weapons/Artillery/artilery_shot
+  reloadSound:
+    Guid:
+      Data1: 788992557
+      Data2: 1118317677
+      Data3: -668149349
+      Data4: 976902124
+    Path: event:/SFX/weapons/Artillery/artilery_reload
+  pool: {fileID: 11400000, guid: 2d6d9d75911fd944b93f7448ef3adf91, type: 2}
+  attackType:
+    rid: 5034893089680654342
+  artilleryImpactCore:
+    <Radius>k__BackingField: 3
+    <Delay>k__BackingField: 0.1
+    <TargetLayer>k__BackingField:
+      serializedVersion: 2
+      m_Bits: 131072
+    hitActions:
+    - rid: 5034893041197383748
+    destroyActions: []
+    layers: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5034893041197383748
+      type: {class: AddEffectWeaponHitAction, ns: Assets.Scripts.Weapons.HitActions, asm: Assembly-CSharp}
+      data:
+        effect: {fileID: 11400000, guid: 2ca2b7c6e3fbd014cac213b4ee07b86d, type: 2}
+    - rid: 5034893089680654342
+      type: {class: AttackTypeAuto, ns: Assets.Scripts.Weapons.AttackTypes, asm: Assembly-CSharp}
+    - rid: 6497457432574820357
+      type: {class: BiomassAmmo, ns: Assets.Scripts.Weapons.Ammo, asm: Assembly-CSharp}
+      data:
+        biomassPerShot: 20
+        biomassStat: {fileID: 11400000, guid: 9a35e6ef96c08244db5c40e46e280793, type: 2}

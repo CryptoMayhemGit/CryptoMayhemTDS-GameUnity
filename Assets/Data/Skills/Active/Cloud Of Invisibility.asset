@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539ba69b1216ec646bb8b73730ca1c6f, type: 3}
+  m_Name: Cloud Of Invisibility
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Cloud Of Invisibility
+  <MassCost>k__BackingField: 50
+  <Sprite>k__BackingField: {fileID: 0}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  <Description>k__BackingField: 
+  <Cooldown>k__BackingField: 12
+  <BiomassCost>k__BackingField: 60
+  condition:
+    rid: -2
+  sounds:
+    sounds: []
+  actions:
+  - <Time>k__BackingField: 0
+    <Action>k__BackingField:
+      rid: 3707987821708443657
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 3707987821708443657
+      type: {class: SpawnSkillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        pool: {fileID: 11400000, guid: 4d91b61423c0d7c478266663198c6bc6, type: 2}
+        spawnType:
+          rid: 3707987821708443658
+    - rid: 3707987821708443658
+      type: {class: SpawnSkillAction/PivotSpawnType, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        pivot: {x: 0, y: 0, z: 0}

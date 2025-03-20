@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539ba69b1216ec646bb8b73730ca1c6f, type: 3}
+  m_Name: Boost Speed
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Boost Speed
+  <MassCost>k__BackingField: 50
+  <Sprite>k__BackingField: {fileID: 21300000, guid: dc7e5cb2da8d08743be43f6da7378ed8, type: 3}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  <Description>k__BackingField: 
+  <Cooldown>k__BackingField: 1
+  <BiomassCost>k__BackingField: 1
+  condition:
+    rid: -2
+  sounds:
+    sounds: []
+  actions:
+  - <Time>k__BackingField: 0
+    <Action>k__BackingField:
+      rid: 3508192013282443268
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 3508192013282443268
+      type: {class: AddEffectSkillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        effect: {fileID: 11400000, guid: 2a3023d97a7d0db4fb9f9d577757b946, type: 2}

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5d05617122f844188c046dbaf7f274, type: 3}
+  m_Name: Flamethrower Rheinmetall FW.2145 Feuerstock v1.0
+  m_EditorClassIdentifier: 
+  <MassCost>k__BackingField: 12000
+  <RequiredZealyLevel>k__BackingField: 15
+  <Sprite>k__BackingField: {fileID: 21300000, guid: fdfff71a3423b954d99703204f31a8e0, type: 3}
+  <Type>k__BackingField: {fileID: 11400000, guid: 9696ad73c78c94d45935516c3654d32c, type: 2}
+  <Rarity>k__BackingField: 0
+  localizedStringLong:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35854680728342540
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringShort:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35854680728342563
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909544841228
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  weaponVisual: {fileID: 3449158072802829514, guid: a9fdffd79275c8e479719c11f412dbbc, type: 3}
+  ammo:
+    rid: 1417695232161218569
+  attackCooldown: 0.1
+  shotSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  weaponEffectObject: {fileID: 7522815476111767222, guid: 2bb236ab598b8fe40acbb4cdaf723bc0, type: 3}
+  range: 1
+  maxEnemies: 1
+  radius: 0.1
+  muzzleEffect: {fileID: 0}
+  attackPivotXAxisOffset: {x: 5.5, y: 0, z: 5}
+  hitActions:
+  - rid: 1417695237195694093
+  - rid: 1417695237195694094
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1417695232161218569
+      type: {class: BiomassAmmo, ns: Assets.Scripts.Weapons.Ammo, asm: Assembly-CSharp}
+      data:
+        biomassPerShot: 17
+        biomassStat: {fileID: 11400000, guid: 9a35e6ef96c08244db5c40e46e280793, type: 2}
+        reloadSound:
+          Guid:
+            Data1: 0
+            Data2: 0
+            Data3: 0
+            Data4: 0
+          Path: 
+    - rid: 1417695237195694093
+      type: {class: DealDamageWeaponHitAction, ns: Assets.Scripts.Weapons.HitActions, asm: Assembly-CSharp}
+      data:
+        damageTypes:
+          list:
+          - <Key>k__BackingField: {fileID: 11400000, guid: 18c9af424d83e8f44941c94c5a167106, type: 2}
+            <Value>k__BackingField:
+              damage: 1
+              criticalMultiplier: 1.5
+              criticalHitChance: 0.03
+        hitBy: 0
+    - rid: 1417695237195694094
+      type: {class: AddEffectWeaponHitAction, ns: Assets.Scripts.Weapons.HitActions, asm: Assembly-CSharp}
+      data:
+        effect: {fileID: 11400000, guid: 2060ea9f4b6edf247ba8d1c896f8aa9e, type: 2}

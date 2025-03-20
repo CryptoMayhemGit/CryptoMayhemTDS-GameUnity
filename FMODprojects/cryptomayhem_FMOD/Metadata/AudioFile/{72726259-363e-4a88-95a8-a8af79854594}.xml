@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{72726259-363e-4a88-95a8-a8af79854594}">
+		<property name="assetPath">
+			<value>gore_splash_02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.8226458333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8994f6e0-b0d9-4d1b-88d7-1da6752118c8}</destination>
+		</relationship>
+	</object>
+</objects>

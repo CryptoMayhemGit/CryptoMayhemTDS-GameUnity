@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d5e828dac79c5478b86d0f56ab71fa, type: 3}
+  m_Name: Quest Disinsection Single Player
+  m_EditorClassIdentifier: 
+  <MapConfiguration>k__BackingField: {fileID: 5186616538846826038, guid: caf8ba8ac53b7484c9df467c6e238305, type: 3}
+  <NavigationData>k__BackingField: {fileID: 4900000, guid: d86e2a0f93413b748b97410533330d4a, type: 3}
+  <QuestInfo>k__BackingField:
+    <Name>k__BackingField: Name
+    <NameLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 82005501261316097
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <ObjectiveName>k__BackingField: Objective Name
+    <ObjectiveNameLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 82005501261316098
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <Title>k__BackingField: Title
+    <TitleLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 82005501261316099
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <Description>k__BackingField: Mission description
+    <DescriptionLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 82005501261316100
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <Orders>k__BackingField:
+    - <Title>k__BackingField: Oeder title
+      <OrderTitleLocale>k__BackingField:
+        m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 82005501261316101
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      <Descriptions>k__BackingField:
+      - 
+      - 
+      - 
+      - 
+      <OrderDescriptionsLocale>k__BackingField:
+      - m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 82005501261316104
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      - m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 82005501261316105
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      - m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 86314956639633408
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      - m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 86314956652216320
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - <Title>k__BackingField: Oeder title
+      <OrderTitleLocale>k__BackingField:
+        m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 82005501261316102
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      <Descriptions>k__BackingField:
+      - '- Eliminate any hostile lifeforms within the zone.'
+      <OrderDescriptionsLocale>k__BackingField:
+      - m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 82005501261316106
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - <Title>k__BackingField: Oeder title
+      <OrderTitleLocale>k__BackingField:
+        m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 82005501261316103
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      <Descriptions>k__BackingField:
+      - '- Eliminate any hostile lifeforms within the zone.'
+      <OrderDescriptionsLocale>k__BackingField:
+      - m_TableReference:
+          m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+        m_TableEntryReference:
+          m_KeyId: 86314956652216321
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    <Attention>k__BackingField: Attention
+    <AttentionLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 82005501261316108
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <Signature>k__BackingField: Signature
+    <SignatureLocale>k__BackingField:
+      m_TableReference:
+        m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+      m_TableEntryReference:
+        m_KeyId: 82005501261316109
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    <MapSprite>k__BackingField: {fileID: 21300000, guid: e4e4f7e355162904090a8cee8b2b6dac, type: 3}
+    <BiomeSprite>k__BackingField: {fileID: 21300000, guid: 761fe889e281abd45b7d4d22b2951b8d, type: 3}
+  <SceneName>k__BackingField: LevelDisinsection
+  <IsInvestorPremiumMode>k__BackingField: 1
+  <ZealyRequiredLevel>k__BackingField: 0
+  successTaskAmountContainer:
+  - <TaskData>k__BackingField: {fileID: 11400000, guid: 21f852aa003d2a14b9d23a763a33b05f, type: 2}
+    <RequiredAmount>k__BackingField: 50
+    <UIPrefab>k__BackingField: {fileID: 1298927442754111552, guid: 4dc040aaaa76f7543b3c3618aba953ed, type: 3}
+  - <TaskData>k__BackingField: {fileID: 11400000, guid: 67938c34711149e45852a8eb5989b324, type: 2}
+    <RequiredAmount>k__BackingField: 50
+    <UIPrefab>k__BackingField: {fileID: 1298927442754111552, guid: 4dc040aaaa76f7543b3c3618aba953ed, type: 3}
+  - <TaskData>k__BackingField: {fileID: 11400000, guid: 9adc8b0e57a9c844396412fcca4efbfc, type: 2}
+    <RequiredAmount>k__BackingField: 25
+    <UIPrefab>k__BackingField: {fileID: 1298927442754111552, guid: 4dc040aaaa76f7543b3c3618aba953ed, type: 3}
+  - <TaskData>k__BackingField: {fileID: 11400000, guid: eda3d9c4f36b06241bd5eec0e33d258a, type: 2}
+    <RequiredAmount>k__BackingField: 25
+    <UIPrefab>k__BackingField: {fileID: 1298927442754111552, guid: 4dc040aaaa76f7543b3c3618aba953ed, type: 3}
+  failTaskAmountContainer:
+  - <TaskData>k__BackingField: {fileID: 11400000, guid: 1ba3bd63f995ea0408784c552d2e6fd5, type: 2}
+    <RequiredAmount>k__BackingField: 1
+    <UIPrefab>k__BackingField: {fileID: 1298927442754111552, guid: 4dc040aaaa76f7543b3c3618aba953ed, type: 3}
+  references:
+    version: 2
+    RefIds: []

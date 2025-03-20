@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539ba69b1216ec646bb8b73730ca1c6f, type: 3}
+  m_Name: Air
+  m_EditorClassIdentifier: 
+  <MassCost>k__BackingField: 1000
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 64b24e20036588f4397427ce3128caeb, type: 3}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  localizedStringLong:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035544
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringShort:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035544
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035575
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Cooldown>k__BackingField: 6
+  <BiomassCost>k__BackingField: 80
+  condition:
+    rid: -2
+  sounds:
+    sounds:
+    - soundEvent:
+        Guid:
+          Data1: 433920013
+          Data2: 1328078144
+          Data3: -1619025495
+          Data4: -1287687608
+        Path: event:/UI/items/item_use_generic
+      randomly: 0
+      chance: 0
+  actions:
+  - <Time>k__BackingField: 0
+    <Action>k__BackingField:
+      rid: 1212658612888666119
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1212658612888666119
+      type: {class: ArtillerySkillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        pool: {fileID: 11400000, guid: 2d6d9d75911fd944b93f7448ef3adf91, type: 2}
+        artilleryImpactCore:
+          <Radius>k__BackingField: 3
+          <Delay>k__BackingField: 1
+          <TargetLayer>k__BackingField:
+            serializedVersion: 2
+            m_Bits: 131072
+          hitActions:
+          - rid: 3707987539239370752
+          destroyActions: []
+          layers:
+          - rid: 1212658612888666121
+    - rid: 1212658612888666121
+      type: {class: ArtilleryLayer, ns: Assets.Scripts.Weapons.ArtilleryImpacts, asm: Assembly-CSharp}
+      data:
+        <Radius>k__BackingField: 4
+        <Action>k__BackingField:
+          rid: 3707987539239370753
+    - rid: 3707987539239370752
+      type: {class: DealDamageWeaponHitAction, ns: Assets.Scripts.Weapons.HitActions, asm: Assembly-CSharp}
+      data:
+        damageTypes:
+          list:
+          - <Key>k__BackingField: {fileID: 11400000, guid: 18c9af424d83e8f44941c94c5a167106, type: 2}
+            <Value>k__BackingField:
+              damage: 120
+              criticalMultiplier: 0.01
+              criticalHitChance: 0.01
+        hitBy: 0
+    - rid: 3707987539239370753
+      type: {class: DealDamageWeaponHitAction, ns: Assets.Scripts.Weapons.HitActions, asm: Assembly-CSharp}
+      data:
+        damageTypes:
+          list:
+          - <Key>k__BackingField: {fileID: 11400000, guid: 18c9af424d83e8f44941c94c5a167106, type: 2}
+            <Value>k__BackingField:
+              damage: 60
+              criticalMultiplier: 0.01
+              criticalHitChance: 0
+        hitBy: 0

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{0584e0b5-fbcc-4ad3-8390-94196702f258}">
+		<property name="name">
+			<value>bombType</value>
+		</property>
+		<relationship name="folder">
+			<destination>{39d58d4e-df9a-4cb4-82b2-6b693c21e3cd}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{6c5225e3-c77f-47e2-ae88-113c65a7fae3}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{6c5225e3-c77f-47e2-ae88-113c65a7fae3}">
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539ba69b1216ec646bb8b73730ca1c6f, type: 3}
+  m_Name: Wave
+  m_EditorClassIdentifier: 
+  <MassCost>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 21300000, guid: cbebf90d3945e5a4780d433404596fff, type: 3}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  localizedStringLong:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035536
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringShort:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909544841266
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035567
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Cooldown>k__BackingField: 8
+  <BiomassCost>k__BackingField: 80
+  condition:
+    rid: -2
+  sounds:
+    sounds: []
+  actions:
+  - <Time>k__BackingField: 0
+    <Action>k__BackingField:
+      rid: 2836422338668134424
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2836422338668134424
+      type: {class: SpawnSkillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        pool: {fileID: 11400000, guid: 2184bd143a2eb2f47b8911af9da95670, type: 2}
+        spawnType:
+          rid: 2836422338668134425
+    - rid: 2836422338668134425
+      type: {class: SpawnSkillAction/PivotSpawnType, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        pivot: {x: 0, y: 0, z: 0}

@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: terrainPrototypeDEBUG_Material
+  m_Shader: {fileID: 4800000, guid: 3ed657ec9233555468b0a9503c688594, type: 3}
+  m_ShaderKeywords: _DISABLE_DECALS
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - TransparentBackface
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _A: 1
+    - _ASD: 1
+    - _AddPrecomputedVelocity: 1
+    - _AlphaCutoff: 0.5
+    - _AlphaCutoffEnable: 0
+    - _AlphaDstBlend: 0
+    - _AlphaSrcBlend: 1
+    - _AlphaToMask: 0
+    - _AlphaToMaskInspectorValue: 0
+    - _BlendMode: 0
+    - _CullMode: 2
+    - _CullModeForward: 2
+    - _DEBUG: 0.999
+    - _DEBUG_LERP: 0.176
+    - _DEBUG_SLOT_1: 0
+    - _DEBUG_SLOT_2: 2
+    - _DoubleSidedEnable: 0
+    - _DoubleSidedNormalMode: 2
+    - _DstBlend: 0
+    - _EMPTY1: 1
+    - _EmsissionIntensity: 0
+    - _EnableFogOnTransparent: 1
+    - _Float11: 0
+    - _Float12: 50
+    - _Float13: -2
+    - _Float14: 15
+    - _Float15: -1
+    - _Float16: 1
+    - _Float17: 1
+    - _Float19: 0
+    - _HHue: 0
+    - _METALIC: 0
+    - _Metalic: 0
+    - _OpaqueCullMode: 2
+    - _ReceivesSSR: 1
+    - _ReceivesSSRTransparent: 0
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
+    - _SMOOTHNESS: 0
+    - _SSaturation: 1
+    - _Smoothness: 0
+    - _SrcBlend: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 8
+    - _StencilRefDistortionVec: 4
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
+    - _StencilWriteMask: 6
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDistortionVec: 4
+    - _StencilWriteMaskGBuffer: 14
+    - _StencilWriteMaskMV: 40
+    - _SupportDecals: 0
+    - _SurfaceType: 0
+    - _TransparentBackfaceEnable: 0
+    - _TransparentCullMode: 2
+    - _TransparentSortPriority: 0
+    - _TransparentZWrite: 1
+    - _UV_ratioX: 1
+    - _UV_ratioY: 1
+    - _UseShadowThreshold: 0
+    - _VValue: 0
+    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestGBuffer: 4
+    - _ZTestTransparent: 4
+    - _ZWrite: 1
+    - _cameraDepthLenght: 100
+    - _cameraDepthOffset: 0
+    - _change: 0
+    - _checkboardLerp: 0.85
+    - _distance: 0
+    - _distanceBorderSize: 0
+    - _distanceHardness: 0.91
+    - _distancePositionX: 0
+    - _distancePositionY: 0
+    - _distanceRange: 10
+    - _edgeHardness: 0.25
+    - _edgeRange: 0.5
+    - _emsissionIntensity: 0
+    - _gradienMultiplyByValue: 1
+    - _gradientInvert: 1
+    - _gradient_DEBUG_LERP: 1
+    - _gradient_DEBUG_SLOT_1: 6
+    - _gradient_DEBUG_SLOT_2: 1
+    - _hexDistortion: 1
+    - _hexNoiseDistortionScale: 2.22
+    - _hexScale: -2
+    - _ifEqual: 0
+    - _lenght: 10
+    - _lightHardness: 0
+    - _lightHeight: 0
+    - _lightRange: 1
+    - _metalic: 0
+    - _noiseAnlge: 1
+    - _noiseHardness: 0
+    - _noiseNormalStrenght: 0.25
+    - _noiseRange: 0.85
+    - _noiseScale: 10
+    - _noiseSmoothness: 1
+    - _normalStrenght: 100
+    - _normal_ON: 0
+    - _normal_ONOFF: 0
+    - _offset: 0
+    - _offsetCentering: 1
+    - _offsetCenteringCheckboard: 1
+    - _offsetX: 0
+    - _offsetX_Checkboard: 0
+    - _offsetY: 0
+    - _offsetY_Checkboard: 0
+    - _outlineHardness: 0
+    - _outlineMultiplierByDistance: 1
+    - _outlineRange: 0.06
+    - _scale: 2
+    - _scale1: 0.5
+    - _scale_Checkboard: 20
+    - _smoothness: 0
+    - _smoothnessHardness: -1.3
+    - _smoothnessRange: 0.75
+    - _textureEmissionIntensity: 2
+    - _textureEmissionOn: 0
+    - _textureNormalOn: 0
+    - _textureSmoothnessOn: 0
+    - _texture_DEBUG_LERP: 1
+    - _texture_DEBUG_SLOT_1: 2
+    - _texture_DEBUG_SLOT_2: 1
+    - _threshold: 0.06
+    - _valueRange: 1
+    - _valueRangeHigher: 0.466
+    - _valueRangeLower: 0.491
+    - _valueSelect: 0.313
+    - _visualizeCameraDepth: 0
+    m_Colors:
+    - _Color2: {r: 0, g: 1, b: 0.8939867, a: 0}
+    - _Color5: {r: 0.21960783, g: 0.21960783, b: 0.21960783, a: 0}
+    - _DEBUG2: {r: 0, g: 0, b: 0, a: 0}
+    - _DEBUG333: {r: 0.12799996, g: 0.8962264, b: 0.40343454, a: 0}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
+    - _EDGEDETECT: {r: 0.21960783, g: 0.21960783, b: 0.21960783, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
+    - _TEXTURE: {r: 0.21960783, g: 0.21960783, b: 0.21960783, a: 0}
+    - _Vector1: {r: 0, g: 1, b: 0, a: 0}
+    - _centerColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _checkboard: {r: 0.21960732, g: 0.21960732, b: 0.21960732, a: 0}
+    - _checkboard_hint: {r: 1, g: 1, b: 1, a: 0.7490196}
+    - _distance: {r: 0.2196075, g: 0.2196075, b: 0.2196075, a: 0}
+    - _distanceBackgroundColor: {r: 0.25, g: 0.25, b: 0.25, a: 0.5019608}
+    - _distanceBorderColor: {r: 2.9960785, g: 0, b: 0.4392157, a: 0.9019608}
+    - _distanceInnerColor: {r: 0, g: 0, b: 0, a: 1}
+    - _distancePosition: {r: 0, g: -200, b: 0, a: 0}
+    - _emissionColor: {r: 1, g: 0, b: 0.13054657, a: 1}
+    - _globalProperties: {r: 0.21960732, g: 0.21960732, b: 0.21960732, a: 0}
+    - _lightTest_01: {r: 0.21960783, g: 0.21960783, b: 0.21960783, a: 0}
+    - _offset: {r: 1, g: 0, b: 0, a: 0}
+    - _offset1: {r: 0.25, g: 0.25, b: 0, a: 0}
+  m_BuildTextureStacks: []

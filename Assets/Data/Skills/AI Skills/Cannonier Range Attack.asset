@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539ba69b1216ec646bb8b73730ca1c6f, type: 3}
+  m_Name: Cannonier Range Attack
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <MassCost>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 0}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  <Description>k__BackingField: 
+  <Cooldown>k__BackingField: 1
+  <BiomassCost>k__BackingField: 0
+  condition:
+    rid: -2
+  sounds:
+    sounds:
+    - soundEvent:
+        Guid:
+          Data1: -722384177
+          Data2: 1319412811
+          Data3: 1150984841
+          Data4: -746182694
+        Path: event:/SFX/enemies/cannoneer/cnn_enemy_cannonshot
+      randomly: 0
+      chance: 0
+    - soundEvent:
+        Guid:
+          Data1: 1695545912
+          Data2: 1305043780
+          Data3: 1089623441
+          Data4: -1388229439
+        Path: event:/VOX/cannoneer/cnn_vox_attack
+      randomly: 1
+      chance: 0.3
+  actions:
+  - <Time>k__BackingField: 0
+    <Action>k__BackingField:
+      rid: 4562100409452724231
+  - <Time>k__BackingField: 0
+    <Action>k__BackingField:
+      rid: 4578853712799465480
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 3707987539196641280
+      type: {class: DealDamageWeaponHitAction, ns: Assets.Scripts.Weapons.HitActions, asm: Assembly-CSharp}
+      data:
+        damageTypes:
+          list:
+          - <Key>k__BackingField: {fileID: 11400000, guid: 18c9af424d83e8f44941c94c5a167106, type: 2}
+            <Value>k__BackingField:
+              damage: 5
+              criticalMultiplier: 0.8
+              criticalHitChance: 0.15
+        hitBy: 0
+    - rid: 4562100409452724231
+      type: {class: RangeAttackAnimationSkillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+    - rid: 4578853712799465480
+      type: {class: ProjectileSkillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        projectileCount: 1
+        minMaxAngle: {x: 0, y: 0}
+        pool: {fileID: 11400000, guid: 462a70d6e30862a4cb26cc76134d294a, type: 2}
+        projectileCore:
+          <MoveType>k__BackingField:
+            rid: 4578853712799465481
+          <ProjectileLifeTime>k__BackingField: 8
+          <Speed>k__BackingField: 15
+          <DestroyOnHit>k__BackingField: 1
+          <EffectsPool>k__BackingField: {fileID: 11400000, guid: 8467423816b6aa447a965598ab713603, type: 2}
+          hitActions:
+          - rid: 3707987539196641280
+          destroyActions: []
+    - rid: 4578853712799465481
+      type: {class: CurveProjectileMoveType, ns: Assets.Scripts.Weapons.Projectiles.MoveTypes, asm: Assembly-CSharp}
+      data:
+        xMovement:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        zMovement:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4

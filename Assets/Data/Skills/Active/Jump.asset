@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539ba69b1216ec646bb8b73730ca1c6f, type: 3}
+  m_Name: Jump
+  m_EditorClassIdentifier: 
+  <MassCost>k__BackingField: 1
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 42037cc3659d91b429c9c70ed76176dc, type: 3}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  localizedStringLong:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035539
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringShort:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909544841269
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedStringDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:cce3cb27329f3a748bd2aea17c286173
+    m_TableEntryReference:
+      m_KeyId: 35859909549035570
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Cooldown>k__BackingField: 5
+  <BiomassCost>k__BackingField: 60
+  condition:
+    rid: 5012140554276306962
+  sounds:
+    sounds:
+    - soundEvent:
+        Guid:
+          Data1: 2008570075
+          Data2: 1307189989
+          Data3: 1428810913
+          Data4: 28312043
+        Path: event:/SFX/mech/mech_dash
+      randomly: 0
+      chance: 0
+  actions:
+  - <Time>k__BackingField: 0
+    <Action>k__BackingField:
+      rid: 2836422338668134415
+  references:
+    version: 2
+    RefIds:
+    - rid: 2836422338668134415
+      type: {class: PlayerJumpSkillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        distance: 12
+        force: 1e+10
+        rigidbodyMass: 400000000
+        obstacles:
+          serializedVersion: 2
+          m_Bits: 1024
+        hitActions:
+        - rid: 5034892767290458339
+        - rid: 5034892767290458340
+        onEndJump:
+          rid: 5034892767290458337
+        onLandEffect: {fileID: 0}
+    - rid: 5012140554276306962
+      type: {class: PlayerMovementSkillCondition, ns: Assets.Scripts.Skills.Condition, asm: Assembly-CSharp}
+    - rid: 5034892767290458337
+      type: {class: SpawnSkillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        pool: {fileID: 11400000, guid: 62d81fa6dceee3146afd2acada3e9f63, type: 2}
+        spawnType:
+          rid: 5034892767290458338
+    - rid: 5034892767290458338
+      type: {class: SpawnSkillAction/PivotSpawnType, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        pivot: {x: 0, y: 0, z: -1}
+    - rid: 5034892767290458339
+      type: {class: DealDamageWeaponHitAction, ns: Assets.Scripts.Weapons.HitActions, asm: Assembly-CSharp}
+      data:
+        damageTypes:
+          list:
+          - <Key>k__BackingField: {fileID: 11400000, guid: 18c9af424d83e8f44941c94c5a167106, type: 2}
+            <Value>k__BackingField:
+              damage: 20
+              criticalMultiplier: 0.01
+              criticalHitChance: 0
+        hitBy: 0
+    - rid: 5034892767290458340
+      type: {class: PushWeaponHitAction, ns: Assets.Scripts.Weapons.HitActions, asm: Assembly-CSharp}
+      data:
+        force: 400

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{049fc2ff-b33f-4b02-bf23-03bf7141eebe}">
+		<property name="assetPath">
+			<value>enemies/cannoneer/cnn_fl_death_03.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.0443750000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8994f6e0-b0d9-4d1b-88d7-1da6752118c8}</destination>
+		</relationship>
+	</object>
+</objects>

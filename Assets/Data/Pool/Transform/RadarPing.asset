@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f5f2180e787114b9d8c8630809aea2, type: 3}
+  m_Name: RadarPing
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4838487129655423493, guid: 870a7f70cb5cfee4db492d9ca672a06e, type: 3}
+  defaultCapcity: 15
+  maxSize: 300

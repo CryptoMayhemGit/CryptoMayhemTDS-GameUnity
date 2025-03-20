@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 09df5d896df0f1f428a7b613b724e4b8
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _terrain_Scale_pebble_024k: {fileID: 2800000, guid: 0b7c77c2b1015984688f282c7a1dd56a, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

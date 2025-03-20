@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{e3758c72-3efe-4609-bcab-4154e7200b24}">
+		<property name="name">
+			<value>whoHitMech</value>
+		</property>
+		<relationship name="folder">
+			<destination>{39d58d4e-df9a-4cb4-82b2-6b693c21e3cd}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9391faf7-b6b0-414c-abdc-381cfc49ed29}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9391faf7-b6b0-414c-abdc-381cfc49ed29}">
+		<property name="maximum">
+			<value>10</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

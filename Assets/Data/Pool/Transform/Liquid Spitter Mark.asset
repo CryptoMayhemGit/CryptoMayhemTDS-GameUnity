@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f5f2180e787114b9d8c8630809aea2, type: 3}
+  m_Name: Liquid Spitter Mark
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 613449685416794076, guid: 788fd872bb5f84d4daa5adb3226aa7a7, type: 3}
+  defaultCapcity: 5
+  maxSize: 10

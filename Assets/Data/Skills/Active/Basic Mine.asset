@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539ba69b1216ec646bb8b73730ca1c6f, type: 3}
+  m_Name: Basic Mine
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Basic Mine
+  <MassCost>k__BackingField: 50
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 1d43563c6a0cd364ebfa379c6742d843, type: 3}
+  <Type>k__BackingField: {fileID: 0}
+  <Rarity>k__BackingField: 0
+  <Description>k__BackingField: 
+  <Cooldown>k__BackingField: 1
+  <BiomassCost>k__BackingField: 1
+  condition:
+    rid: -2
+  sounds:
+    sounds:
+    - soundEvent:
+        Guid:
+          Data1: -26418942
+          Data2: 1129488487
+          Data3: 1316783488
+          Data4: -1940655034
+        Path: event:/SFX/items/item_mine_use
+      randomly: 0
+      chance: 0
+  actions:
+  - <Time>k__BackingField: 0
+    <Action>k__BackingField:
+      rid: 3707987821708443657
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 3707987821708443657
+      type: {class: SpawnSkillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        pool: {fileID: 11400000, guid: 70e4402df9400e64a9a4f187fb74a502, type: 2}
+        spawnType:
+          rid: 3707987821708443658
+    - rid: 3707987821708443658
+      type: {class: SpawnSkillAction/PivotSpawnType, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        pivot: {x: 0, y: 0, z: -1}

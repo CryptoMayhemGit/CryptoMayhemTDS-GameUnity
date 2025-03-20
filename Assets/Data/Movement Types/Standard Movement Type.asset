@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662408a6768533a4eac9b76920c54165, type: 3}
+  m_Name: Standard Movement Type
+  m_EditorClassIdentifier: 
+  <DashCooldown>k__BackingField: 4
+  dashSpeed: 50
+  dashDuration: 0.2

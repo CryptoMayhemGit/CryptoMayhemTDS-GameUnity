@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{a836e3b4-93b1-4fff-bb37-0cf355cea89e}">
+		<property name="assetPath">
+			<value>enemies/scratcher/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8994f6e0-b0d9-4d1b-88d7-1da6752118c8}</destination>
+		</relationship>
+	</object>
+</objects>

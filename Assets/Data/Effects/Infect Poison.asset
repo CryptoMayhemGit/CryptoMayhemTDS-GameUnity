@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3d7854040f6ba4583aa21854390a7f, type: 3}
+  m_Name: Infect Poison
+  m_EditorClassIdentifier: 
+  actions:
+  - rid: 1212658302861443074
+  <VisualPool>k__BackingField: {fileID: 0}
+  <TickTime>k__BackingField: 1
+  <TicksAmount>k__BackingField: 3
+  renewType: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 1212658302861443074
+      type: {class: InfectEffectAction, ns: Assets.Scripts.Effects.Action, asm: Assembly-CSharp}
+      data:
+        effects:
+        - {fileID: 11400000, guid: ab4243c510a2bef41a02bf1cf10c7497, type: 2}
+        radius: 5
+        infectSelf: 0

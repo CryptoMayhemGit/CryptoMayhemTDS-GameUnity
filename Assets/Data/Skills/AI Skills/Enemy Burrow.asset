@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539ba69b1216ec646bb8b73730ca1c6f, type: 3}
+  m_Name: Enemy Burrow
+  m_EditorClassIdentifier: 
+  <Sprite>k__BackingField: {fileID: 0}
+  <CustomUI>k__BackingField: 0
+  <Cooldown>k__BackingField: 1
+  condition:
+    rid: -2
+  actions:
+  - <Time>k__BackingField: 0
+    <Action>k__BackingField:
+      rid: 4578853644690784313
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4578853644690784313
+      type: {class: EnemyBurrowSkillAction, ns: Assets.Scripts.Skills.Action, asm: Assembly-CSharp}
+      data:
+        unburrowDistance: 3
+        healthBurrowThreshold: 0.5
+        healthStat: {fileID: 11400000, guid: df963ddf6eba0e74997252c3c72595af, type: 2}
+        player: {fileID: 11400000, guid: e5c5b17e9d07be74c8be7bc8236087e7, type: 2}

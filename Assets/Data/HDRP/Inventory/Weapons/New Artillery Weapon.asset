@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1bf5290bdf6ee4ebed6e5603adc5f8, type: 3}
+  m_Name: New Artillery Weapon
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 901fc442a772fef4eb2674ccb5fa5a07, type: 3}
+  <Type>k__BackingField: {fileID: 11400000, guid: 9696ad73c78c94d45935516c3654d32c, type: 2}
+  <Rarity>k__BackingField: 0
+  <Description>k__BackingField: 
+  weaponVisual: {fileID: 4033785903889663932, guid: 62d2a987159806d43afcd7633c248372, type: 3}
+  ammo:
+    rid: 6497457432574820364
+  attackCooldown: 0.1
+  shotSound:
+    Guid:
+      Data1: 165350076
+      Data2: 1257669334
+      Data3: 1249854090
+      Data4: -24756435
+    Path: event:/SFX/weapons/Artillery/artilery_shot
+  reloadSound:
+    Guid:
+      Data1: 788992557
+      Data2: 1118317677
+      Data3: -668149349
+      Data4: 976902124
+    Path: event:/SFX/weapons/Artillery/artilery_reload
+  pool: {fileID: 11400000, guid: 2d6d9d75911fd944b93f7448ef3adf91, type: 2}
+  attackType:
+    rid: 3661463130243072006
+  artilleryImpactCore:
+    <Radius>k__BackingField: 5
+    <Delay>k__BackingField: 1
+    <TargetLayer>k__BackingField:
+      serializedVersion: 2
+      m_Bits: 131072
+    hitActions:
+    - rid: 3508192661062811654
+    destroyActions:
+    - rid: 5034892610854191113
+    layers: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3508192661062811654
+      type: {class: DealDamageWeaponHitAction, ns: Assets.Scripts.Weapons.HitActions, asm: Assembly-CSharp}
+      data:
+        damageTypes:
+          list:
+          - <Key>k__BackingField: {fileID: 11400000, guid: 18c9af424d83e8f44941c94c5a167106, type: 2}
+            <Value>k__BackingField:
+              damage: 1
+              criticalMultiplier: 0.01
+              criticalHitChance: 0
+    - rid: 3661463130243072006
+      type: {class: AttackTypeNormal, ns: Assets.Scripts.Weapons.AttackTypes, asm: Assembly-CSharp}
+    - rid: 5034892610854191113
+      type: {class: SpawnItemWeaponHitAction, ns: Assets.Scripts.Weapons.DestroyActions, asm: Assembly-CSharp}
+      data:
+        pool: {fileID: 11400000, guid: 0cd5f39259c9ebe4c86f2e1b85fe4241, type: 2}
+    - rid: 6497457432574820364
+      type: {class: BiomassAmmo, ns: Assets.Scripts.Weapons.Ammo, asm: Assembly-CSharp}
+      data:
+        biomassPerShot: 5
+        biomassStat: {fileID: 11400000, guid: 9a35e6ef96c08244db5c40e46e280793, type: 2}

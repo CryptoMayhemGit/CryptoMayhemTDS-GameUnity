@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Boss Enemy
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(1002.92859,-191)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(0,110)"},"ID":1,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0,110)"},"ID":2,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"Assets.Scripts.Behavior.Tasks.WithinDistanceToClosestTarget","NodeData":{"Offset":"(0,110)"},"ID":3,"Name":"Within
+        Distance To Closest Target","Instant":true,"SharedCharacterContainercharacter":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},"SharedFloatdistance":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Melee
+        Attack Range","IsShared":true,"SinglemValue":10},"SharedBoollineOfSight":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"LayerMaskignoreLayerMask":-2121800841},{"Type":"Assets.Scripts.Behavior.Tasks.TryUseSkill","NodeData":{"Offset":"(170,110)"},"ID":4,"Name":"Try
+        Use Skill","Instant":true,"SharedCharacterContainercharacter":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},"SharedSkillskill":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedSkill","Name":"Melee
+        Attack Skill","IsShared":true,"SkillmValue":0},"SharedBoolcanPassNullTarget":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(370,110)"},"ID":5,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"Assets.Scripts.Behavior.Tasks.WithinRangeToClosestTarget","NodeData":{"Offset":"(0,110)"},"ID":6,"Name":"Within
+        Range To Closest Target","Instant":true,"SharedCharacterContainercharacter":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},"SharedFloatminDistance":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Melee
+        Attack Range","IsShared":true,"SinglemValue":10},"SharedFloatmaxDistance":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Ranged
+        Attack Range","IsShared":true,"SinglemValue":30},"SharedBoollineOfSight":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"LayerMaskignoreLayerMask":-2121800841},{"Type":"Assets.Scripts.Behavior.Tasks.RotateTowardsClosestTarget","NodeData":{"Offset":"(210,110)"},"ID":7,"Name":"Rotate
+        Towards Closest Target","Instant":true,"SharedCharacterContainercharacter":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},"SharedFloatrotationSpeed":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedFloatangleTolerance":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3}},{"Type":"Assets.Scripts.Behavior.Tasks.WaitAsync","NodeData":{"Offset":"(370,110)"},"ID":8,"Name":"Wait
+        Async","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0.2}},{"Type":"Assets.Scripts.Behavior.Tasks.WeightedRandomSkill","NodeData":{"Offset":"(510,110)"},"ID":9,"Name":"Weighted
+        Random Skill","Instant":true,"SharedCharacterContainercharacter":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},"SkillContainer[]skillsContainers":[{"Type":"Assets.Scripts.Behavior.Tasks.WeightedRandomSkill+SkillContainer","Value":{"SharedSkillskill":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedSkill","Name":"Ranged
+        Attack Skill","IsShared":true,"SkillmValue":1},"Singleweight":1,"BooleancanPassNullTarget":false}},{"Type":"Assets.Scripts.Behavior.Tasks.WeightedRandomSkill+SkillContainer","Value":{"SharedSkillskill":{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedSkill","Name":"Artillery
+        Attack Skill","IsShared":true,"SkillmValue":2},"Singleweight":0.15,"BooleancanPassNullTarget":false}}]}]}]},"Variables":[{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedCharacterContainer","Name":"Character","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Melee
+        Attack Range","IsShared":true,"SinglemValue":10},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Ranged
+        Attack Range","IsShared":true,"SinglemValue":30},{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedSkill","Name":"Melee
+        Attack Skill","IsShared":true,"SkillmValue":3},{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedSkill","Name":"Ranged
+        Attack Skill","IsShared":true,"SkillmValue":4},{"Type":"Assets.Scripts.Behavior.SharedVariables.SharedSkill","Name":"Artillery
+        Attack Skill","IsShared":true,"SkillmValue":5}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 11400000, guid: 6657dc3c0234f184cb7de7fd0acbd7e6, type: 2}
+        - {fileID: 11400000, guid: 718105f747a4f2049984e17b7cdb3db6, type: 2}
+        - {fileID: 11400000, guid: 3877732eaf205cf458fd7434d9d9d650, type: 2}
+        - {fileID: 11400000, guid: 6657dc3c0234f184cb7de7fd0acbd7e6, type: 2}
+        - {fileID: 11400000, guid: 718105f747a4f2049984e17b7cdb3db6, type: 2}
+        - {fileID: 11400000, guid: 3877732eaf205cf458fd7434d9d9d650, type: 2}
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.1
